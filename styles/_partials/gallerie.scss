@@ -1,0 +1,48 @@
+.projects-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+}
+
+.projects {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	position: relative;
+	color: black;
+	article {
+		h4,
+		ul {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+		}
+		h4 {
+			top: 10%;
+			font-family: "Lora", serif;
+		}
+		ul {
+			bottom: 10%;
+			list-style-type: none;
+		}
+		li {
+			font-size: 0.875rem;
+		}
+	}
+	background-color: aquamarine;
+}
+
+@media (min-width: 768px) {
+	.projects-container {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 4rem;
+	}
+	.projects {
+		article {
+			h4,
+			li {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,96 @@
+// Import configs
+@import "./_partials/config.scss";
+
+// Normalize styles
+body,
+p,
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+// Global tags styles
+body {
+	background-color: $beige;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+}
+
+section {
+	padding: 3rem 2rem;
+
+	&:nth-of-type(even) {
+		background-color: $sea-mist;
+	}
+	@media (min-width: 768px) {
+		&:nth-of-type(even) {
+			background-color: transparent;
+		}
+		&:nth-of-type(odd) {
+			background-color: $sea-mist;
+		}
+	}
+}
+
+h1,
+h3 {
+	font-family: "Lora", serif;
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+h2 {
+	font-size: 1.25rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	padding-bottom: 1rem;
+	@media (min-width: 768px) {
+		padding-bottom: 3rem;
+	}
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+// Global classes an ids styles
+.container {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.cta {
+	display: inline-block;
+	background-color: transparent;
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 1rem 2rem;
+	margin-top: 1rem;
+	box-sizing: border-box;
+	border: 1px black solid;
+}
+
+// Import all partials used in styles
+@import "./_partials/header.scss";
+@import "./_partials/intro.scss";
+@import "./_partials/apropos.scss";
+@import "./_partials/gallerie.scss";
+@import "./_partials/contact.scss";
