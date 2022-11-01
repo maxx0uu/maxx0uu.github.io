@@ -165,7 +165,14 @@ header {
   aspect-ratio: 1/1;
   position: relative;
   color: black;
-  background-color: aquamarine;
+  background-color: white;
+}
+.projects img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
 }
 .projects article h4,
 .projects article ul {
