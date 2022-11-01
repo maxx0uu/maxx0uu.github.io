@@ -1,3 +1,10 @@
+#contact {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -12,8 +19,38 @@ form {
 	}
 }
 
+.socials {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 1rem;
+}
+
+.social-link {
+	img {
+		width: 2rem;
+	}
+}
+
 @media (min-width: 768px) {
+	#contact {
+		.wrapper {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
 	form {
-		width: 50%;
+		width: 45%;
+	}
+	.socials {
+		width: 45%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.social-link {
+		img {
+			width: 4rem;
+		}
 	}
 }
